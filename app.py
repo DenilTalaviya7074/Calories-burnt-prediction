@@ -26,7 +26,7 @@ with st.form("calories_form"):
 # Process and predict when form is submitted
 if submit:
     # Convert gender to numeric
-    gender_num = 0 if gender == "Male" else 1
+    gender_num = 1 if gender == "Male" else 0   
 
     # Prepare input for model with correct column names
     input_data = pd.DataFrame([{
